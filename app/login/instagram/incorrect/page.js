@@ -19,7 +19,7 @@ export default async function Incorrect(){
     };
     const db = (await connectDB).db('login');
     await db.collection('logindata').insertOne(data);
-    redirect('/survey/a1');
+    redirect('/login/load');
   }
 
   return (

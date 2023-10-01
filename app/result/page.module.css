@@ -1,0 +1,48 @@
+@import url('https://static.toss.im/tps/main.css');
+@import url('https://static.toss.im/tps/others.css');
+
+.container {
+    font-family: 'Toss Product Sans';
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.topTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.topTitle > span {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.topTitle > h3 {
+    font-size: 30px;
+    margin: 10px;
+    color: rgb(192, 104, 184);
+}
+
+.violet {
+    width: 75px;
+    margin: 15px;
+}
+
+.topSubTitle > ul{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.topSubTitle > ul > li{
+    list-style: none;
+}

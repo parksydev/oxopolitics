@@ -5,7 +5,7 @@ export default function SurveyButton(props) {
   let link = props.src;
 
   if (link === 16) {
-    link = '/result';
+    link = '/result/load';
   } else {
     link = `/survey/a${props.src}`;
   }
