@@ -16,7 +16,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 40px;
+    margin: 50px;
 }
 
 .topTitle > span {
@@ -31,8 +31,15 @@
 }
 
 .violet {
-    width: 75px;
+    width: 70px;
     margin: 15px;
+}
+
+.topSubtitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .topSubTitle > ul{
@@ -41,8 +48,139 @@
     margin: 0;
     padding: 0;
     text-align: left;
+    width: 90vw;
 }
 
 .topSubTitle > ul > li{
     list-style: none;
+    font-size: 16px;
+    padding: 5px;
+}
+
+.middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 90px;
+}
+
+.middleTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.middleTitle > h3 {
+    font-size: 21px;
+    text-align: center;
+}
+
+.middleTitle > span{
+    text-align: center;
+    color: rgb(167, 167, 167);
+    font-weight: 200;
+    font-size: 15px;
+}
+
+.middleTitle > img {
+    width: 90vw;
+    margin-top: 50px;
+}
+
+.middleSubTitle {
+    color: rgb(192, 104, 184);
+    font-size: 11px;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.middleSubTitle > span {
+    margin: 3px;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 90px;
+}
+
+.bottomTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottomTitle > h3 {
+    font-size: 21px;
+    font-weight: 600;
+} 
+
+.bottomTitle > span {
+    font-size: 15px;
+    text-align: center;
+    color: rgb(167, 167, 167);
+}
+
+.bottomTitle > img {
+    width: 75vw;
+    margin-top: 50px;
+}
+
+.boxWrap {
+    width: 90vw;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.box {
+    width: 72vw;
+    height: 50px;
+    border-radius: 14px;
+    background-color: rgb(233, 233, 233);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.sharebox {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(44, 44, 44);
+    color: white;
+    font-size: 25px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.retry {
+    font-size: 14px;
+    color: black;
+    padding: 30px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 90px;
+}
+
+.footer > img {
+    width: 90px;
+    margin: 3px;
+}
+
+.footer > span {
+    margin: 3px;
+    font-size: 13px;
+    font-weight: 600;
 }

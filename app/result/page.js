@@ -1,5 +1,7 @@
+import Link from 'next/link';
 import styles from './page.module.css';
 import Header from '../component/Header';
+import { FiShare } from 'react-icons/fi';
 
 export default function Result() {
   return (
@@ -22,8 +24,35 @@ export default function Result() {
         </ul>
       </div>
     </div>
-    <div className={styles.middle}></div>
-    <div className={styles.bottom}></div>
+    <div className={styles.middle}>
+      <div className={styles.middleTitle}>
+        <h3>옥소 활동에 따라 정치성향은 <br/>계속 바뀔 수 있어요!</h3>
+        <span>매일 옥소의 질문에 응답하면 <br/>지형도의 위치가 움직여요</span>
+        <img src='/img/indicator.jpeg'></img>
+      </div>
+      <div className={styles.middleSubTitle}>
+        <span>지형도에서 나의 위치 확인하기</span>
+        <span>· 위에 있을수록 법과 제도 등 시스템을, 아래에 있을수록 개인의 자유를 중요하게 생각해요</span>
+      </div>
+    </div>
+    <div className={styles.bottom}>
+      <div className={styles.bottomTitle}>
+        <h3>다른 결과보기</h3>
+        <span>옥소는 모든 정치성향이 모여있는 <br/>정치 커뮤니티예요</span>
+        <img src='/img/characters.jpeg'></img>
+      </div>
+      <div className={styles.boxWrap}>
+        <div className={styles.box}><span>다른 테스트 하러가기</span></div>
+        <div className={styles.sharebox}><FiShare/></div>
+      </div>
+      <Link href={'/'}  style={{ textDecoration: "none" }} className={styles.retry}>
+        <span>처음부터 다시하기</span>
+      </Link>
+    </div>
+    <div className={styles.footer}>
+      <span>Powered by</span>
+      <img src='/img/oxopolitics-logo.jpg'></img>
+    </div>
     </div>
   )
 }
