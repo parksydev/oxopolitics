@@ -21,11 +21,12 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
+
+  const title = '옥소폴리틱스 정치성향 테스트';
+
   return (  
     <html lang="ko">
-      <Head>
-        <title>옥소폴리틱스 정치성향 테스트</title>
-      </Head>
+      <title>{title}</title>
       <body className={inter.className} style={{margin: "0", padding: "0"}}>{children}</body>
     </html>
   )
