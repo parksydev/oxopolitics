@@ -16,6 +16,7 @@
     "framer-motion": "^10.16.4",
     "mongodb": "4.0",
     "next": "latest",
+    "open-graph": "^0.2.6",
     "react": "latest",
     "react-dom": "latest",
     "react-icons": "^4.11.0"

@@ -1,4 +1,5 @@
 import './globals.css';
+import Head from 'next/head';
 import { Inter } from 'next/font/google';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -10,8 +11,11 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
-  return (
+  return (  
     <html lang="ko">
+      <Head>
+        <meta property="og:image" content="/img/login-background.png" />
+      </Head>
       <body className={inter.className} style={{margin: "0", padding: "0"}}>{children}</body>
     </html>
   )
