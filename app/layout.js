@@ -17,6 +17,7 @@ export const metadata = {
       },
     ],
   },
+  title: '옥소폴리틱스 정치성향 테스트',
   viewport: 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no',
 }
 
