@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
   return (  
     <html lang="ko">
       <Head>
-        <meta property="og:image" content="/img/login-background.png" />
+        <meta property="og:image" content="https://oxopolitics.com/assets/assets/og_image_mid.jpg" />
       </Head>
       <body className={inter.className} style={{margin: "0", padding: "0"}}>{children}</body>
     </html>
